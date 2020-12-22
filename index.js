@@ -39,13 +39,12 @@ client.on('message', message => {
     }
     if(command=="account"){
         if(user!=null){
-            var embed=generateEmbed()
+            var embed=generateEmbed("#000000", `${name}'s Account`, 'CryptoVoop', 'https://github.com/CeaserInc/CryptoVoop', 'https://i.imgur.com/b2Ld99d.png', `Credits: ${user.credits}`, "Your Account", "https://i.imgur.com/b2Ld99d.png")
             message.channel.send(embed);
-            message.channel.send("Your Account")
         }else{
             message.channel.send("You need to make an acount")
         }
-        generateEmbed("#000000", `${name}'s Account`, null, null, null, `Credits: ${user.credits}`, "Your Account", null)
+        
         
     }
 });
