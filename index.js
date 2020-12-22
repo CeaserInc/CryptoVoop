@@ -1,6 +1,6 @@
 import Discord from 'discord.js';
 const client = new Discord.Client();
-import { generateEmbed } from "./embedgen.mjs";
+import { generateEmbed } from './embedgen.mjs'
 import fs from 'fs'; 
 const config = JSON.parse(fs.readFileSync('./config.json', { encoding: 'utf-8' }))
 const users=JSON.parse(fs.readFileSync('./users.json', { encoding: 'utf-8' }))
